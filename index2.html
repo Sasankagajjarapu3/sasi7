@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div{
+            color: red;
+        }
+    </style>
+      
+</head>
+<body>
+    <ul>
+        <li>sasi</li>
+        <li>priya</li>
+        <li class="div">satya</li>
+    </ul>
+    <img src="./Downloads/sm.JPG" width="250">
+    <img src="./Downloads/m.jpeg" width="250">
+    <img src="./Downloads/ms.jpeg" width="250">
+    <script>
+        let liget=document.getElementsByTagName("li");
+        
+        console.log(liget[1]);
+        for (let i = 1; i < liget.length; i++) {
+            console.log(liget[i]);
+            liget[i].remove()
+            
+        }
+    </script>
+</body>
+</html>
