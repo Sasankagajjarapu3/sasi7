@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+</style>
+</head>
+<body>
+
+<h2>Card</h2>
+
+<div class="card">
+  <img src="http://2.bp.blogspot.com/-FIS-CjoHr3o/UI1H4Jx32kI/AAAAAAAAMXU/92VoGsuzsP4/s1600/Rose+Flowers+Wallpapers+3.jpg" alt="rose" style="width:100%">
+  <div class="container">
+    <h4><b>ROSE </b></h4> 
+    
+  </div>
+</div>
+
+</body>
+</html> 
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
+
+<h1>Flip Card</h1>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="http://2.bp.blogspot.com/-FIS-CjoHr3o/UI1H4Jx32kI/AAAAAAAAMXU/92VoGsuzsP4/s1600/Rose+Flowers+Wallpapers+3.jpg" alt="Rose" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Rose</h1> 
+       
+      
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
