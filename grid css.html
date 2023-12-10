@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header" id="myHeader">
+  <h1>Image Grid</h1>
+  <p>Click on the buttons to change the grid view.</p>
+  <button class="btn" onclick="one()">1</button>
+  <button class="btn active" onclick="two()">2</button>
+  <button class="btn" onclick="four()">4</button>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="http://cdn.wallpapersafari.com/51/13/5OcUPQ.jpg" style="width:100%">
+    <img src="https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?cs=srgb&dl=lights-car-vehicle-244206.jpg&fm=jpg" style="width:100%">
+    <img src="https://static3.hotcarsimages.com/wordpress/wp-content/uploads/2019/07/feature-luxury-sport-car.jpg" style="width:100%">
+    <img src="http://www.hdwallpaperspulse.com/wp-content/uploads/2013/06/Antique-cars-classic-car-models-wallpapers-1280x1024-no-11-desktop.jpg" style="width:100%">
+    <img src="https://2.bp.blogspot.com/-QTgBbd2rGJk/Uc6blfXIXTI/AAAAAAAAMHA/yRjbb8K7muQ/s1600/r8_supercars_power_cool_cars-hd-wallpaper-269579.jpg" style="width:100%">
+    <img src="http://s1.picswalls.com/wallpapers/2014/06/18/free-vintage-cars-wallpaper_054104521_44.jpg" style="width:100%">
+    <img src="https://1.bp.blogspot.com/-K6ESyLIkYIw/TnmGPuH26DI/AAAAAAAAADI/cVW515e-DLg/s1600/classic+cars+pictures+1.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://4.bp.blogspot.com/-M_vS2t3j82Y/UoAtmkZT4xI/AAAAAAAACMI/LIPtaP7Tums/s400/bugatti+car+pictures+6.jpg" style="width:100%">
+    <img src="https://cimg3.ibsrv.net/ibimg/hgm/600x338-1/100/907/2023-abt-xgt_100907131.jpg" style="width:100%">
+    <img src="http://1.bp.blogspot.com/-IEb24bIZbjs/TplZBxMcAGI/AAAAAAAAAxE/YWlIziEYhFs/s1600/car+wallpapers+for+desktop+2.jpg" style="width:100%">
+    <img src="https://2.bp.blogspot.com/-Jeo2g9jy7w4/ToIKKKNtF6I/AAAAAAAAAH8/oKD4BxH6GfE/s1600/super-hot-cars-4.jpg" style="width:100%">
+    <img src="https://3.bp.blogspot.com/-c0BqLBgvPiI/Ud07r3flXuI/AAAAAAAAA5A/UHh8cvftohc/s640/car_videos_to_brighten_your_weekend_the_super_cars_are_super_large_89804.jpg" style="width:100%">
+    <img src="https://tse1.mm.bing.net/th?id=OIP.SD3Z_F5TSwQrSs7ykOBrsQHaFj&pid=Api&P=0&h=220" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="https://tse1.mm.bing.net/th?id=OIF.mBHZftZUG7d0%2fbE0%2fBgzmA&pid=Api&P=0&h=220" style="width:100%">
+    <img src="http://digitalsynopsis.com/wp-content/uploads/2014/06/supercar-wallpapers-bugatti-3.jpg" style="width:100%">
+    <img src="https://www.pixelstalk.net/wp-content/uploads/2016/06/Pictures-Download-HD-Car-Wallpapers.jpg" style="width:100%">
+    <img src="http://wallpapercave.com/wp/WMRpqEw.jpg" style="width:100%">
+    <img src="https://3.bp.blogspot.com/-XsWZaSfa1b0/TrNu3e0BFuI/AAAAAAAAAS4/6YldDyyeT-s/s1600/ferrari-f70-automotive-cars-images-003.jpg" style="width:100%">
+    <img src="http://wallpapercave.com/wp/fcMRyWY.jpg" style="width:100%">
+    <img src="http://2.bp.blogspot.com/-2CHItTEKYzg/TxRjtS5KOeI/AAAAAAAAAeo/wI8djlxZ4w8/s1600/hot-cars-pictures%2B4.png" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="http://images.thecarconnection.com/hug/vision-gl420-big-jpg_100225259_h.jpg" style="width:100%">
+    <img src="https://cdn-fastly.thetruthaboutcars.com/media/2023/12/01/16131/qotd-going-cyber.jpg?size=1200x628" style="width:100%">
+    <img src="https://digitalsynopsis.com/wp-content/uploads/2014/06/supercar-wallpapers-lamborghini-4.jpg" style="width:100%">
+    <img src="https://cdn.motor1.com/images/mgl/mrz1e/s1/coolest-cars-feature.jpg" style="width:100%">
+    <img src="https://tse1.mm.bing.net/th?id=OIP.UJxK0oNqZiJQrUqiLNy__AHaEK&pid=Api&P=0&h=220" style="width:100%">
+    <img src="http://3.bp.blogspot.com/-BlhREBaw9W0/TwCTSoUkegI/AAAAAAAAAF4/m3jhSobXLJ4/s1600/Cool+cars+wallpapers+3.jpg" style="width:100%">
+  </div>
+</div>
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
